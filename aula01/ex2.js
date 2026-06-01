@@ -3,7 +3,7 @@ const input = require('readline-sync')
 let num1 = Number(input.question("Digite um numero: "));
 let num2 = Number(input.question("Digite outro numero: "));
 
-console.log(`A soma desses dois numeros eh: ${num1 + num2}`)
+console.log(`A soma desses numeros eh: ${num1 + num2}`)
 console.log(`A subtracao eh: ${num1 - num2}`)
 console.log(`A multiplicacao eh: ${num1 * num2}`)
 
