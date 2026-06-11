@@ -1,12 +1,21 @@
 const input = require('readline-sync')
 
-let num = 1
-
-function cont(num){
-    return num + 1;
-}
-console.log("1");
+let num = 0
 
 for(let i = 0; i <= 99; i++){
-    console.log(cont(num))
+    num++
+
+    if(num %3 === 0){
+        console.log(`Fizz`);
+    }
+    else if(num %5 === 0){
+        console.log(`Buzz`);
+    }
+    if(num %3 === 0 && num %5 === 0){
+        console.log(`FizzBuzz`);
+    }
+
+    else {
+        console.log(`${num}`)
+    }
 }
