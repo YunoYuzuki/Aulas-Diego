@@ -5,17 +5,19 @@ let fim = Number(penis.question("Digite outro numero: "));
 
 function range(inicio, fim){
     let lista = [];
-    let cont = 0;
-
     for(let i = inicio; i <= fim; i++){
-        lista[cont] = i;
-        cont++;
+        lista.push(i);
     }
     return lista;
 }
 
-function soma(inicio, fim){
-    return inicio + fim;
+function soma(lista){
+    let so_ma = 0;
+    for(let i = 0; i < lista.length; i++){
+        so_ma += lista[i];
+    }
+    return so_ma;
 }
 
-console.log(`${range(inicio, fim)}, e a soma deles é ${soma(inicio, fim)}`);
+console.log(`${range(inicio, fim)}`)
+console.log(soma(range(inicio, fim)))
